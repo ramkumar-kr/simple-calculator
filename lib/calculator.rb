@@ -11,6 +11,7 @@ class Calculator
  	def subtract(argument)
 		@value = @value - argument
  	end
+ 	
  	def multiply(argument)
 		@value = @value * argument
  	end
