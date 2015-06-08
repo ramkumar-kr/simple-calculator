@@ -3,10 +3,9 @@ require_relative '../lib/parser.rb'
 require_relative '../lib/calculator.rb'
 
 parser = Parser.new
-print "\n>> "
-input = gets.chomp
+input = ""
 while input != 'exit' do 
-	puts parser.parse(input)
 	print "\n>> "
 	input = gets.chomp
+	puts parser.parse(input)
 end

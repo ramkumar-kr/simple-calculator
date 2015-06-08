@@ -36,4 +36,10 @@ describe Parser do
 		end
 	end
 
+	context "Invalid command" do
+		it "should return Invalid command message" do
+			expect(@parser.parse("ksjdhkdsbfdjshvbs")).to eq("Invalid Command")
+		end
+	end
+
 end
