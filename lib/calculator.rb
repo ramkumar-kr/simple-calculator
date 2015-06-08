@@ -11,12 +11,16 @@ class Calculator
  	def subtract(argument)
 		@value = @value - argument
  	end
- 	
+
  	def multiply(argument)
 		@value = @value * argument
  	end
 
  	def divide(argument)
 		@value = @value / argument
+ 	end
+
+ 	def cancel
+ 		@value = 0
  	end
 end

@@ -49,4 +49,10 @@ describe Calculator do
 			expect{ @calculator.divide(0) }.to raise_error(ZeroDivisionError)
 		end
 	end
+
+	context 'Cancel' do
+		it "should return 0" do
+			expect(@calculator.cancel).to eq(0)
+		end
+	end
 end
