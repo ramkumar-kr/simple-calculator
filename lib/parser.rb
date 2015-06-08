@@ -1,6 +1,6 @@
 # convert input string to arithmetic operation 
 class Parser
-	ALLOWED_METHODS = ["add"]
+	ALLOWED_METHODS = ["add", "subtract", "multiply", "divide", "cancel"]
 	def initialize
 		@calculator = Calculator.new
 	end
