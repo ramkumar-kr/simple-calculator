@@ -4,14 +4,18 @@ class Calculator
 		@value = 0
 	end
 
-	def operate
-		cmd = gets.chomp
-		cmd_arr = cmd.split
-		puts add(cmd_arr[1].to_f)
-	end
-
 	def add(argument)
 		@value = @value + argument
-		@value
+ 	end
+
+ 	def subtract(argument)
+		@value = @value - argument
+ 	end
+ 	def multiply(argument)
+		@value = @value * argument
+ 	end
+
+ 	def divide(argument)
+		@value = @value / argument
  	end
 end
