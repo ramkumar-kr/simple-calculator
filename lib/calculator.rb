@@ -4,23 +4,23 @@ class Calculator
 		@value = 0
 	end
 
-	def add(argument)
-		@value = @value + argument
+	def add(operand)
+		@value = @value + operand
  	end
 
- 	def subtract(argument)
-		@value = @value - argument
+ 	def subtract(operand)
+		@value = @value - operand
  	end
 
- 	def multiply(argument)
-		@value = @value * argument
+ 	def multiply(operand)
+		@value = @value * operand
  	end
 
- 	def divide(argument)
-		@value = @value / argument
+ 	def divide(operand)
+		@value = @value / operand
  	end
 
- 	def cancel
+ 	def cancel(operand = nil)
  		@value = 0
  	end
 end
