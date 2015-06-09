@@ -5,7 +5,7 @@ describe ExitCommand do
 		it "should throe" do
       calculator = Calculator.new
       command = ExitCommand.new
-      expect { command.execute }.to raise_error(SystemExit)
+      expect { command.execute(calculator) }.to raise_error(SystemExit)
 
     end
 	end
