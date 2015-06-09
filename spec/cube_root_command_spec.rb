@@ -1,10 +1,10 @@
 require "spec_helper"
 
-describe CubertCommand do
+describe CubeRootCommand do
 	context "cube root" do
 		it "should call cube root method of Calculator class when execute method is called" do
       calculator = Calculator.new
-      command = CubertCommand.new
+      command = CubeRootCommand.new
       expect_any_instance_of(Calculator).to receive(:cube_root)
       command.execute(calculator)
 

@@ -1,5 +1,5 @@
 # Calls absolute operation of calculator
-class AbsCommand < Command
+class AbsoluteCommand < Command
 	
 	def execute(calculator)
 		calculator.absolute

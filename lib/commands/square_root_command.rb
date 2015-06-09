@@ -1,5 +1,5 @@
 # Calls square root operation of calculator
-class SqrtCommand < Command
+class SquareRootCommand < Command
 	
 	def execute(calculator)
 		calculator.square_root

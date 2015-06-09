@@ -1,5 +1,5 @@
 # Calls cube root operation of calculator
-class CubertCommand < Command
+class CubeRootCommand < Command
 	
 	def execute(calculator)
 		calculator.cube_root

@@ -158,7 +158,7 @@
         null,
         null
       ],
-      "/Users/ramkumar/simple-calculator/lib/commands/abs_command.rb": [
+      "/Users/ramkumar/simple-calculator/lib/commands/absolute_command.rb": [
         null,
         1,
         null,
@@ -201,7 +201,7 @@
         null,
         null
       ],
-      "/Users/ramkumar/simple-calculator/lib/commands/cubert_command.rb": [
+      "/Users/ramkumar/simple-calculator/lib/commands/cube_root_command.rb": [
         null,
         1,
         null,
@@ -259,7 +259,7 @@
         null,
         null
       ],
-      "/Users/ramkumar/simple-calculator/lib/commands/neg_command.rb": [
+      "/Users/ramkumar/simple-calculator/lib/commands/negate_command.rb": [
         null,
         1,
         null,
@@ -269,7 +269,7 @@
         null,
         null
       ],
-      "/Users/ramkumar/simple-calculator/lib/commands/sqr_command.rb": [
+      "/Users/ramkumar/simple-calculator/lib/commands/square_command.rb": [
         null,
         1,
         null,
@@ -279,7 +279,7 @@
         null,
         null
       ],
-      "/Users/ramkumar/simple-calculator/lib/commands/sqrt_command.rb": [
+      "/Users/ramkumar/simple-calculator/lib/commands/square_root_command.rb": [
         null,
         1,
         null,
@@ -525,7 +525,7 @@
         null,
         null
       ],
-      "/Users/ramkumar/simple-calculator/spec/cubert_command_spec.rb": [
+      "/Users/ramkumar/simple-calculator/spec/cube_root_command_spec.rb": [
         1,
         null,
         1,
@@ -598,7 +598,7 @@
         null,
         null
       ],
-      "/Users/ramkumar/simple-calculator/spec/neg_command_spec.rb": [
+      "/Users/ramkumar/simple-calculator/spec/negate_command_spec.rb": [
         1,
         null,
         1,
@@ -697,7 +697,7 @@
         null,
         null
       ],
-      "/Users/ramkumar/simple-calculator/spec/sqr_command_spec.rb": [
+      "/Users/ramkumar/simple-calculator/spec/square_command_spec.rb": [
         1,
         null,
         1,
@@ -712,7 +712,7 @@
         null,
         null
       ],
-      "/Users/ramkumar/simple-calculator/spec/sqrt_command_spec.rb": [
+      "/Users/ramkumar/simple-calculator/spec/square_root_command_spec.rb": [
         1,
         null,
         1,
@@ -743,6 +743,6 @@
         null
       ]
     },
-    "timestamp": 1433844285
+    "timestamp": 1433845657
   }
 }

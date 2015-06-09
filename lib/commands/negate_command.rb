@@ -1,5 +1,5 @@
 # Calls negation operation of calculator
-class NegCommand < Command
+class NegateCommand < Command
 	
 	def execute(calculator)
 		calculator.negate

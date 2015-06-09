@@ -1,5 +1,5 @@
 # Calls square operation of calculator
-class SqrCommand < Command
+class SquareCommand < Command
 	
 	def execute(calculator)
 		calculator.square

@@ -22,15 +22,15 @@ class Parser
 		when 'exit'
 			token = ExitCommand.new	
 		when 'abs'
-			token = AbsCommand.new(operand)
+			token = AbsoluteCommand.new(operand)
 		when 'sqrt'
-			token = SqrtCommand.new(operand)
+			token = SquareRootCommand.new(operand)
 		when 'neg'
-			token = NegCommand.new(operand)
+			token = NegateCommand.new(operand)
 		when 'sqr'
-			token = SqrCommand.new(operand)			
+			token = SquareCommand.new(operand)			
 		when 'cubert'
-			token = CubertCommand.new(operand)
+			token = CubeRootCommand.new(operand)
 		when 'cube'
 			token = CubeCommand.new(operand)
 		else
