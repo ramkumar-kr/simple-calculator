@@ -21,6 +21,18 @@ class Parser
 			token = CancelCommand.new
 		when 'exit'
 			token = ExitCommand.new	
+		when 'abs'
+			token = AbsCommand.new(operand)
+		when 'sqrt'
+			token = SqrtCommand.new(operand)
+		when 'neg'
+			token = NegCommand.new(operand)
+		when 'sqr'
+			token = SqrCommand.new(operand)			
+		when 'cubert'
+			token = CubertCommand.new(operand)
+		when 'cube'
+			token = CubeCommand.new(operand)
 		else
 			token = InvalidCommand.new
 		end

@@ -2,7 +2,6 @@
 class Command
 	attr_reader :value
 	def initialize(number = 0)
-		raise ArgumentError if number.class != Float
 		@value = number
 	end
 

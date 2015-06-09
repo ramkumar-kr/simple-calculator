@@ -43,4 +43,40 @@ describe Parser do
 		end
 	end
 
+	context "Absolute command" do
+		it "should return abs command object when string passed is abs" do
+      expect(@parser.parse("abs")).to be_instance_of(AbsCommand)
+		end
+	end
+
+	context "Negate command" do
+		it "should return neg command object when string passed is neg" do
+      expect(@parser.parse("neg")).to be_instance_of(NegCommand)
+		end
+	end
+
+	context "Square root command" do
+		it "should return sqrt command object when string passed is sqrt" do
+      expect(@parser.parse("sqrt")).to be_instance_of(SqrtCommand)
+		end
+	end
+
+	context "Square command" do
+		it "should return sqr command object when string passed is sqr" do
+      expect(@parser.parse("sqr")).to be_instance_of(SqrCommand)
+		end
+	end
+
+	context "Cube root command" do
+		it "should return cubert command object when string passed is cubert" do
+      expect(@parser.parse("cubert")).to be_instance_of(CubertCommand)
+		end
+	end
+
+	context "Cube command" do
+		it "should return cube command object when string passed is cube" do
+      expect(@parser.parse("cube")).to be_instance_of(CubeCommand)
+		end
+	end	
+
 end
