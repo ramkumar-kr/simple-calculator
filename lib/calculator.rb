@@ -23,4 +23,28 @@ class Calculator
  	def cancel(operand = nil)
  		@value = 0
  	end
+
+ 	def absolute
+ 		@value = @value.abs
+ 	end
+
+ 	def negate
+ 		@value = -@value
+ 	end
+
+ 	def square_root
+ 		@value = Math.sqrt(@value)
+ 	end
+
+ 	def square
+ 		@value = @value * @value
+ 	end
+
+ 	def cube_root
+ 		 @value = @value ** (1/3.0)
+ 	end
+
+ 	def cube
+ 		@value = @value ** 3
+ 	end
 end

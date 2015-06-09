@@ -55,4 +55,78 @@ describe Calculator do
 			expect(@calculator.cancel).to eq(0)
 		end
 	end
+
+	context 'Absolute' do
+		it "should return 4 when absolute of -4 is asked" do
+			@calculator.add(4)
+			expect(@calculator.absolute).to eq(4)
+		end
+
+		it "should return 7 when absolute of 7 is asked" do
+			@calculator.add(7)
+			expect(@calculator.absolute).to eq(7)
+		end
+	end
+
+	context 'Negate' do
+		it "should return 4 when negation of -4 is asked" do
+			@calculator.subtract(4)
+			expect(@calculator.negate).to eq(4)
+		end
+
+		it "should return -7 when negation of 7 is asked" do
+			@calculator.add(7)
+			expect(@calculator.negate).to eq(-7)
+		end
+	end
+
+	context 'Square root' do
+		it "should return 2 when square_root of 4 is asked" do
+			@calculator.add(4)
+			expect(@calculator.square_root).to eq(2)
+		end
+
+		it "should return 1.7320508075688772 when square_root of 3 is asked" do
+			@calculator.add(3)
+			expect(@calculator.square_root).to eq(1.7320508075688772)
+		end
+	end
+
+	context 'Square' do
+		it "should return 9 when square of 3 is asked" do
+			@calculator.add(3)
+			expect(@calculator.square).to eq(9)
+		end
+
+		it "should return 9 when square of -3 is asked" do
+			@calculator.subtract(3)
+			expect(@calculator.square).to eq(9)
+		end
+	end
+
+	context 'Cube root' do
+		it "should return 2 when cube_root of 8 is asked" do
+			@calculator.add(8)
+			expect(@calculator.cube_root).to eq(2)
+		end
+
+		it "should return 3 when cube_root of 27 is asked" do
+			@calculator.add(27)
+			expect(@calculator.cube_root).to eq(3)
+		end
+	end
+
+	context 'Cube' do
+		it "should return 27 when cube of 3 is asked" do
+			@calculator.add(3)
+			expect(@calculator.cube).to eq(27)
+		end
+
+		it "should return -27 when cube of -3 is asked" do
+			@calculator.subtract(3)
+			expect(@calculator.cube).to eq(-27)
+		end
+	end
+
+
 end
