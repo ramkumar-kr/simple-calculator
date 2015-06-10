@@ -22,17 +22,17 @@ class Parser
 		when 'exit'
 			token = ExitCommand.new	
 		when 'abs'
-			token = AbsoluteCommand.new(operand)
+			token = AbsoluteCommand.new
 		when 'sqrt'
-			token = SquareRootCommand.new(operand)
+			token = SquareRootCommand.new
 		when 'neg'
-			token = NegateCommand.new(operand)
+			token = NegateCommand.new
 		when 'sqr'
-			token = SquareCommand.new(operand)			
+			token = SquareCommand.new			
 		when 'cubert'
-			token = CubeRootCommand.new(operand)
+			token = CubeRootCommand.new
 		when 'cube'
-			token = CubeCommand.new(operand)
+			token = CubeCommand.new
 		when 'repeat'
 			token = RepeatCommand.new(operand)
 		else

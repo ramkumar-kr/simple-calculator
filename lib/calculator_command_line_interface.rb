@@ -18,6 +18,10 @@ class CalculatorCommandLineInterface
 	def interact		
 		@input = gets.chomp
 		token =  @parser.parse(@input)
-		puts token.execute(@calculator, @history)
+		begin
+			puts token.execute(@calculator, @history)
+		rescue Math::DomainError
+			puts "Check your number dude!!! :@"
+		end
 	end
 end

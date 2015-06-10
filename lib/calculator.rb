@@ -1,6 +1,7 @@
 # Performs simple arithmetic operations
 class Calculator
 	attr_reader :value
+	
 	def initialize
 		@value = 0
 	end
@@ -42,7 +43,7 @@ class Calculator
  	end
 
  	def cube_root
- 		 @value = @value ** (1/3.0)
+ 		 @value = Math.cbrt(@value)
  	end
 
  	def cube
