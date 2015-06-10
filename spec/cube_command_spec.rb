@@ -5,8 +5,9 @@ describe CubeCommand do
 		it "should call cube method of Calculator class when execute method is called" do
       calculator = Calculator.new
       command = CubeCommand.new
+      history = CommandHistory.new
       expect_any_instance_of(Calculator).to receive(:cube)
-      command.execute(calculator)
+      command.execute(calculator, history)
 
     end
 	end

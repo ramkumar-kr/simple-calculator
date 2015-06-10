@@ -1,8 +1,10 @@
 # Calls absolute operation of calculator
 class AbsoluteCommand < Command
 	
-	def execute(calculator)
-		calculator.absolute
+	def execute(reciever, history)
+		reciever.absolute
+		history.add(self)
+		reciever.value
 	end
 	
 end

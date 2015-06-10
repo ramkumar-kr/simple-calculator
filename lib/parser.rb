@@ -33,6 +33,8 @@ class Parser
 			token = CubeRootCommand.new(operand)
 		when 'cube'
 			token = CubeCommand.new(operand)
+		when 'repeat'
+			token = RepeatCommand.new(operand)
 		else
 			token = InvalidCommand.new
 		end

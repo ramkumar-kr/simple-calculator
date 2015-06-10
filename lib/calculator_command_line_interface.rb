@@ -4,6 +4,7 @@ class CalculatorCommandLineInterface
 	def initialize
 		@parser = Parser.new
 		@calculator = Calculator.new
+		@history = CommandHistory.new
 		@input = ''
 	end
 
@@ -14,10 +15,9 @@ class CalculatorCommandLineInterface
 		end
 	end
 
-	def interact
-		
+	def interact		
 		@input = gets.chomp
 		token =  @parser.parse(@input)
-		puts token.execute(@calculator)
+		puts token.execute(@calculator, @history)
 	end
 end

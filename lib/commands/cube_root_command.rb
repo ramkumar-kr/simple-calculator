@@ -1,8 +1,10 @@
 # Calls cube root operation of calculator
 class CubeRootCommand < Command
 	
-	def execute(calculator)
-		calculator.cube_root
+	def execute(receiver, history)
+		receiver.cube_root
+		history.add(self)
+		receiver.value
 	end
 	
 end

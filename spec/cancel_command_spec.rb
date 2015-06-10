@@ -5,8 +5,9 @@ describe CancelCommand do
 		it "should call cancel method of Calculator class when execute method is called" do
       calculator = Calculator.new
       command = CancelCommand.new
+      history = CommandHistory.new
       expect_any_instance_of(Calculator).to receive(:cancel)
-      command.execute(calculator)
+      command.execute(calculator, history)
 
     end
 	end

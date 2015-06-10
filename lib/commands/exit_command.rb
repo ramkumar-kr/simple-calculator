@@ -5,7 +5,7 @@ class ExitCommand < Command
 	
 	end
 	
-	def execute(calculator)
+	def execute(receiver, history)
 		exit
 	end
 	

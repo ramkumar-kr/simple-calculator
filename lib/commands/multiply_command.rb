@@ -1,8 +1,10 @@
 # Calls multiply operation of calculator
 class MultiplyCommand < Command
 	
-	def execute(calculator)
-		calculator.multiply(@value)
+	def execute(receiver, history)
+		receiver.multiply(@value)
+		history.add(self)
+		receiver.value
 	end
 	
 end

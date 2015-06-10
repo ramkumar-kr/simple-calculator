@@ -5,7 +5,7 @@ class InvalidCommand < Command
 		
 	end
 
-	def execute(calculator)
+	def execute(receiver, history)
 		"Invalid command"
 	end
 	

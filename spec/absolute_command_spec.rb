@@ -5,8 +5,9 @@ describe AbsoluteCommand do
 		it "should call absolute method of Calculator class when execute method is called" do
       calculator = Calculator.new
       command = AbsoluteCommand.new
+      history = CommandHistory.new
       expect_any_instance_of(Calculator).to receive(:absolute)
-      command.execute(calculator)
+      command.execute(calculator, history)
 
     end
 	end

@@ -4,8 +4,10 @@ class CancelCommand < Command
 	def initialize
 	end
 
-	def execute(calculator)
-		calculator.cancel
+	def execute(receiver, history)
+		receiver.cancel
+		history.add(self)
+		receiver.value
 	end
 	
 end

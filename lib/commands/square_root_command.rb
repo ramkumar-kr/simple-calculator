@@ -1,8 +1,10 @@
 # Calls square root operation of calculator
 class SquareRootCommand < Command
 	
-	def execute(calculator)
-		calculator.square_root
+	def execute(receiver, history)
+		receiver.square_root
+		history.add(self)
+		receiver.value
 	end
 	
 end

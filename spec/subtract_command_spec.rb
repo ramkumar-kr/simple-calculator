@@ -5,8 +5,9 @@ describe SubtractCommand do
 		it "should call subtract method of Calculator class when execute method is called" do
       calculator = Calculator.new
       command = SubtractCommand.new(10)
+      history = CommandHistory.new
       expect_any_instance_of(Calculator).to receive(:subtract)
-      command.execute(calculator)
+      command.execute(calculator, history)
 
     end
 	end
