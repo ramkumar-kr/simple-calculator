@@ -15,8 +15,11 @@ describe Calculator do
 		end
 	end
 
-	context '' do
-		
+	context 'to_s' do
+		it "should return 10 when value in the calculator is 10" do
+			@calculator.add(10)
+			expect(@calculator.value).to eq(10)
+		end
 	end
 	
 	context 'Subtraction' do
