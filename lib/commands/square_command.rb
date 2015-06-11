@@ -4,7 +4,7 @@ class SquareCommand < Command
 	def execute(receiver, history)
 		receiver.square
 		history.add(self)
-		receiver.value
+		receiver
 	end
 	
 end

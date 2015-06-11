@@ -5,8 +5,7 @@ class CommandHistory
 	end
 
 	def length
-		@command_history_array.length
-		
+		@command_history_array.length		
 	end
 
 	def add(command)

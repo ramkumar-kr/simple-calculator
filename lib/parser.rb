@@ -1,9 +1,6 @@
 # convert input string to arithmetic operation 
 class Parser
-	def initialize
-		@calculator = Calculator.new
-	end
-
+	
 	def parse(string)
 		command_array = string.split
 		command = command_array[0]

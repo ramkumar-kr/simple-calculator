@@ -4,7 +4,7 @@ class CubeRootCommand < Command
 	def execute(receiver, history)
 		receiver.cube_root
 		history.add(self)
-		receiver.value
+		receiver
 	end
 	
 end

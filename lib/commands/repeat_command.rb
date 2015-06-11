@@ -1,4 +1,4 @@
-#
+# Repeats sequence of commands retrieved from history
 class RepeatCommand < Command
 	
 	def execute(receiver, history)

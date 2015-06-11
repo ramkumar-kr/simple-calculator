@@ -1,9 +1,18 @@
-# Performs simple arithmetic operations
+# Performs arithmetic operations
 class Calculator
-	attr_reader :value
+	attr_reader :value, :history
 	
-	def initialize
+	def initialize(value = 0, history = CommandHistory.new)
 		@value = 0
+		@history = history
+	end
+
+	def to_s
+		"#{@value}"
+	end
+
+	def add_to_history(command_object)
+		@history.add(command_object)
 	end
 
 	def add(operand)

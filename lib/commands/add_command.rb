@@ -1,10 +1,10 @@
 # Calls add operation of calculator
 class AddCommand < Command
 	
-	def execute(reciever, history)
-		reciever.add(@value)
+	def execute(receiver, history)
+		receiver.add(@value)
 		history.add(self)
-		reciever.value
+		receiver
 	end
 	
 end

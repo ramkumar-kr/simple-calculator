@@ -7,10 +7,16 @@ describe Calculator do
 			expect(@calculator.add(6)).to eq(6.0)
 		end
 
+
+
 		it "should return 11 when 5 is added after 6 is added" do
 			@calculator.add(6)
 			expect(@calculator.add(5)).to eq(11.0)
 		end
+	end
+
+	context '' do
+		
 	end
 	
 	context 'Subtraction' do

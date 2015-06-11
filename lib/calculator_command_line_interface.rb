@@ -9,7 +9,7 @@ class CalculatorCommandLineInterface
 	end
 
 	def start
-		while true
+		loop do
 			print "\n>> "
 			interact	
 		end
@@ -19,7 +19,8 @@ class CalculatorCommandLineInterface
 		@input = gets.chomp
 		token =  @parser.parse(@input)
 		begin
-			puts token.execute(@calculator, @history)
+			@calculator = token.execute(@calculator, @history)
+			puts @calculator
 		rescue Math::DomainError
 			puts "Check your number dude!!! :@"
 		end

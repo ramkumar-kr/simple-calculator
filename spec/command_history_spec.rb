@@ -8,15 +8,6 @@ describe CommandHistory do
 			expect(history.length).to eq(0)
 		end
 	end
-	context 'Add to History' do
-		it "should return length of history increased by 1 when add method is called" do
-			history = CommandHistory.new
-			add_command = AddCommand.new(5)
-			history.add(add_command)
-			expect(history.length).to eq(1)
-		end
-	end
-
 	context 'Retrieve' do
 		it "should return last n commands in an array when retrieve method is called" do
 			history = CommandHistory.new

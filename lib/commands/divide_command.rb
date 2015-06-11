@@ -4,7 +4,7 @@ class DivideCommand < Command
 	def execute(receiver, history)
 		receiver.divide(@value)
 		history.add(self)
-		receiver.value
+		receiver
 	end
 	
 end

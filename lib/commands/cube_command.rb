@@ -1,10 +1,10 @@
 # Calls cube operation of calculator
 class CubeCommand < Command
 	
-	def execute(reciever, history)
-		reciever.cube
+	def execute(receiver, history)
+		receiver.cube
 		history.add(self)
-		reciever.value
+		receiver
 	end
 	
 end
