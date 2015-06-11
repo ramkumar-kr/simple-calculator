@@ -3,7 +3,7 @@ class AddCommand < Command
 	
 	def execute(receiver, history)
 		receiver.add(@value)
-		history.add(self)
+		receiver.add_to_history(self)
 		receiver
 	end
 	

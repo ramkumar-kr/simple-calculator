@@ -3,7 +3,7 @@ class MultiplyCommand < Command
 	
 	def execute(receiver, history)
 		receiver.multiply(@value)
-		history.add(self)
+		receiver.add_to_history(self)
 		receiver
 	end
 	

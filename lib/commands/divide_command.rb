@@ -3,7 +3,7 @@ class DivideCommand < Command
 	
 	def execute(receiver, history)
 		receiver.divide(@value)
-		history.add(self)
+		receiver.add_to_history(self)
 		receiver
 	end
 	

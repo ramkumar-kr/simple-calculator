@@ -3,7 +3,7 @@ class CubeCommand < Command
 	
 	def execute(receiver, history)
 		receiver.cube
-		history.add(self)
+		receiver.add_to_history(self)
 		receiver
 	end
 	

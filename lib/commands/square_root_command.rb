@@ -3,7 +3,7 @@ class SquareRootCommand < Command
 	
 	def execute(receiver, history)
 		receiver.square_root
-		history.add(self)
+		receiver.add_to_history(self)
 		receiver
 	end
 	

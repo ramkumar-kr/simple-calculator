@@ -3,7 +3,7 @@ class CancelCommand < Command
 	
 	def execute(receiver, history)
 		receiver.cancel
-		history.add(self)
+		receiver.add_to_history(self)
 		receiver
 	end
 	
