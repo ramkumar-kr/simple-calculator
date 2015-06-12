@@ -146,7 +146,7 @@ describe Calculator do
 
 
 
-		pending "should call retrieve method of CommandHistory when retrieve_from_history method is called" do
+		it "should call retrieve method of CommandHistory when retrieve_from_history method is called" do
 			command_object = AddCommand.new(10)
 			allow_any_instance_of(CommandHistory).to receive(:retrieve)
 			@calculator.add_to_history(command_object)
