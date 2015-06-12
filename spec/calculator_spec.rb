@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe Calculator do
-	before(:each)  {@calculator = Calculator.new }
+	before(:each)  {@calculator = Calculator.new(0,CommandHistory.new) }
 	context 'Addition' do
 		it "should return 6 when 6 is asked to be added" do
 			expect(@calculator.add(6)).to eq(6.0)
@@ -137,5 +137,12 @@ describe Calculator do
 		end
 	end
 
+	context 'history' do
+		it "should call add method of CommandHistory object when add_to_history method is called" do
+			allow_any_instance_of(CommandHistory).to receive(:add)
+			command_object = AddCommand.new(10)
+			command_object.execute(@calculator)
+		end
+	end
 
 end
