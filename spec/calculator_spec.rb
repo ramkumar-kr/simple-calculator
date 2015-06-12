@@ -148,11 +148,10 @@ describe Calculator do
 
 		it "should call retrieve method of CommandHistory when retrieve_from_history method is called" do
 			command_object = AddCommand.new(10)
-			allow_any_instance_of(CommandHistory).to receive(:retrieve)
 			@calculator.add_to_history(command_object)
 			@calculator.add_to_history(command_object)
 			@calculator.add_to_history(command_object)
-			@calculator.retrieve_from_history(1).inspect
+			expect(@calculator.retrieve_from_history(1)).to eq([command_object])
 		end
 	end
 

@@ -6,12 +6,12 @@ class RepeatCommand < Command
 	end
 
 	def execute(receiver)
-		unwanted_history = CommandHistory.new
+		unwanted_reciever = Calculator.new(receiver.value)
 		history_array = receiver.retrieve_from_history(@value)
 		history_array.each do |command|
-			command.execute(receiver)
+			command.execute(unwanted_reciever)
 		end
-		receiver
+		Calculator.new(unwanted_reciever.value, receiver.history)
 	end
 	
 end

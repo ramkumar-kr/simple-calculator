@@ -2,7 +2,7 @@ require "spec_helper"
 
 describe RepeatCommand do
   context 'Retrieval of History' do
-  	pending "should call execute method of AddCommand class twice when execute method is called" do
+  	it "should call execute method of AddCommand class twice when execute method is called" do
   		calculator = Calculator.new
   		history = CommandHistory.new
       add_command1 = AddCommand.new(10)

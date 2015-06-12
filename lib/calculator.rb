@@ -3,7 +3,7 @@ class Calculator
 	attr_reader :value, :history
 	
 	def initialize(value = 0, history = CommandHistory.new)
-		@value = 0
+		@value = value
 		@history = history
 	end
 
