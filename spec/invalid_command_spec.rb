@@ -6,7 +6,7 @@ describe InvalidCommand do
       command = InvalidCommand.new
       calculator = Calculator.new
       history = CommandHistory.new
-      expect(command.execute(calculator, history)).to eq("Invalid command")
+      expect(command.execute(calculator, history)).to eq(calculator)
 
     end
 	end

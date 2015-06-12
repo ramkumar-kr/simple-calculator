@@ -2,7 +2,7 @@
 class InvalidCommand < Command
 	
 	def execute(receiver, history)
-		"Invalid command"
+		receiver
 	end
 	
 end
