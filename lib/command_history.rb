@@ -13,7 +13,7 @@ class CommandHistory
 	end
 
 	def retrieve(number)
-		@command_history_array[length - number..length - 1]
+		@command_history_array.slice(length - number, number)
 	end
 
 end

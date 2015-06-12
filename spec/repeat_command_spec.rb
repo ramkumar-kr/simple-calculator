@@ -9,11 +9,11 @@ describe RepeatCommand do
       add_command2 = AddCommand.new(9)
       add_command3 = AddCommand.new(93)
       repeat_command = RepeatCommand.new(2)
-      add_command1.execute(calculator, history)
-      add_command2.execute(calculator, history)
-      add_command2.execute(calculator, history)
+      add_command1.execute(calculator)
+      add_command2.execute(calculator)
+      add_command2.execute(calculator)
       expect_any_instance_of(AddCommand).to receive(:execute).twice
-      puts repeat_command.execute(calculator)
+      repeat_command.execute(calculator)
   	end
   end
 end

@@ -15,6 +15,10 @@ class Calculator
 		@history.add(command_object)
 	end
 
+	def retrieve_from_history(count)
+		history_array = @history.retrieve(count)
+	end
+
 	def add(operand)
 		@value = @value + operand
  	end
