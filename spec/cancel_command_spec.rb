@@ -7,7 +7,7 @@ describe CancelCommand do
       command = CancelCommand.new
       history = CommandHistory.new
       expect_any_instance_of(Calculator).to receive(:cancel)
-      command.execute(calculator, history)
+      command.execute(calculator)
 
     end
 	end

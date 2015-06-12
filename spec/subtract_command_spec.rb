@@ -7,7 +7,7 @@ describe SubtractCommand do
       command = SubtractCommand.new(10)
       history = CommandHistory.new
       expect_any_instance_of(Calculator).to receive(:subtract)
-      command.execute(calculator, history)
+      command.execute(calculator)
 
     end
 	end

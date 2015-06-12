@@ -7,7 +7,7 @@ describe CubeRootCommand do
       command = CubeRootCommand.new
       history = CommandHistory.new
       expect_any_instance_of(Calculator).to receive(:cube_root)
-      command.execute(calculator, history)
+      command.execute(calculator)
 
     end
 	end

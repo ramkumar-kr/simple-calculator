@@ -1,7 +1,7 @@
 # Terminates the program
 class ExitCommand < Command
 
-	def execute(receiver, history)
+	def execute(receiver)
 		exit
 	end
 	

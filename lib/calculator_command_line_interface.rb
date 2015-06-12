@@ -19,7 +19,7 @@ class CalculatorCommandLineInterface
 		@input = gets.chomp
 		token =  @parser.parse(@input)
 		begin
-			@calculator = token.execute(@calculator, @history)
+			@calculator = token.execute(@calculator)
 			puts @calculator
 		rescue Math::DomainError
 			puts "Check your number dude!!! :@"

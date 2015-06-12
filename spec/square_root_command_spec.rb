@@ -7,7 +7,7 @@ describe SquareRootCommand do
       command = SquareRootCommand.new
       history = CommandHistory.new
       expect_any_instance_of(Calculator).to receive(:square_root)
-      command.execute(calculator, history)
+      command.execute(calculator)
 
     end
 	end

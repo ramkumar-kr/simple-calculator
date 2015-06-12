@@ -7,7 +7,7 @@ describe DivideCommand do
       command = DivideCommand.new(10)
       history = CommandHistory.new
       expect_any_instance_of(Calculator).to receive(:divide)
-      command.execute(calculator, history)
+      command.execute(calculator)
 
     end
 	end

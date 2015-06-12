@@ -7,7 +7,7 @@ describe SquareCommand do
       command = SquareCommand.new
       history = CommandHistory.new
       expect_any_instance_of(Calculator).to receive(:square)
-      command.execute(calculator, history)
+      command.execute(calculator)
 
     end
 	end

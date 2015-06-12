@@ -7,7 +7,7 @@ describe CubeCommand do
       command = CubeCommand.new
       history = CommandHistory.new
       expect_any_instance_of(Calculator).to receive(:cube)
-      command.execute(calculator, history)
+      command.execute(calculator)
 
     end
 	end

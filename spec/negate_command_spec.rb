@@ -7,7 +7,7 @@ describe NegateCommand do
       command = NegateCommand.new
       history = CommandHistory.new
       expect_any_instance_of(Calculator).to receive(:negate)
-      command.execute(calculator, history)
+      command.execute(calculator)
 
     end
 	end

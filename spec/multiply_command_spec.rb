@@ -7,7 +7,7 @@ describe MultiplyCommand do
       command = MultiplyCommand.new(10)
       history = CommandHistory.new
       expect_any_instance_of(Calculator).to receive(:multiply)
-      command.execute(calculator, history)
+      command.execute(calculator)
 
     end
 	end

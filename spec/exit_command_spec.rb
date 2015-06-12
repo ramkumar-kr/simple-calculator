@@ -6,7 +6,7 @@ describe ExitCommand do
       calculator = Calculator.new
       command = ExitCommand.new
       history = CommandHistory.new
-      expect { command.execute(calculator, history) }.to raise_error(SystemExit)
+      expect { command.execute(calculator) }.to raise_error(SystemExit)
 
     end
 	end
