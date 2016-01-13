@@ -56,7 +56,7 @@ class Calculator
  	end
 
  	def cube_root
- 		 @value = Math.cbrt(@value)
+ 		 @value = Math.cbrt(@value).to_i
  	end
 
  	def cube
